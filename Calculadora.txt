@@ -1,0 +1,51 @@
+programa
+{
+
+    funcao inicio()
+    {
+        real soma, sub, mult, div
+        real n1, n2
+          real op
+
+          escreva("informe a operação desejada: \n")
+          escreva("DIGITE: \n")
+          escreva("1 PARA SOMAR \n")
+          escreva("2 PARA SUBTRAIR \n")
+          escreva("3 PARA MULTIPLICAR \n")
+          escreva("4 PARA DIVIDIR \n")
+          leia(op)
+
+          limpa()
+
+          escreva("Informe o PRIMEIRO valor: ")
+          leia(n1)
+          escreva("Informe o SEGUNDO valor: ")
+          leia(n2)
+
+          se(op == 1){
+              soma = n1+n2
+              escreva("A Soma eh: ",soma)
+          }
+          senao se(op == 2){
+              sub = n1-n2
+              escreva("A subitração eh: ",sub)
+          }
+          senao se(op == 3){
+              mult = n1*n2
+              escreva("A multiplicação eh: ",mult)
+          }
+          senao se(op == 4){
+              div = n1/n2
+              escreva("A Divisão eh: ",div)
+          }
+          senao{
+              escreva("Operação Invalida")
+          }
+
+
+
+
+
+
+    }
+}
